@@ -30,7 +30,7 @@ jobs:
         run: docker push ${{ secrets.DOCKER_USERNAME }}/my-node-app:latest
 
       - name: ✅ Done
-        run: echo "Image pushed to Docker Hub!"
+        run: echo "Image is pushed to Docker Hub!"
 
       - name: Deploy to EC2 via SSH
         uses: appleboy/ssh-action@v1.0.0
